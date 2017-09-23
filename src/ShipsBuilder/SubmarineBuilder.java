@@ -7,6 +7,7 @@ public class SubmarineBuilder {
 		this.shipBuilder=shipBuilder;
 		
 	}
+	
 	public Ship construct(){
 		shipBuilder.setName("Submarine");
 		shipBuilder.setSize(2);

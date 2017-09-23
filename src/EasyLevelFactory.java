@@ -1,5 +1,5 @@
                                              
-public class EasyLevelFactory implements GameFactory{
+public class EasyLevelFactory implements GameDetailFactory{
 	
 	
 	@Override

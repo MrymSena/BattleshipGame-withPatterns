@@ -1,4 +1,4 @@
 
-public class Ships {
-
+public interface Ships {
+		public String toString();
 }

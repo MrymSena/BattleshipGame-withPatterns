@@ -7,6 +7,7 @@ import ShipsBuilder.SubmarineBuilder;
 
 
 public class HardLevelShips implements Ships {
+	
 	ShipBuilder builder = new ShipBuilderImpl();
 	BoatBuilder boatBuilder=  new BoatBuilder(builder);
 	BoatBuilder boatBuilder2=  new BoatBuilder(builder);
@@ -18,7 +19,5 @@ public class HardLevelShips implements Ships {
 		return "Hard Level ships Boat1: "+ boatBuilder.construct()+"Boat2: "+boatBuilder2.construct()+" Submarine: "+ submarineBuilder.construct()+
 				" Destroyer: "+destroyerBuilder.construct()+"BattleshipBuilder: "+battleshipBuilder.construct();
 	}
- 
-    
 
 }

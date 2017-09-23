@@ -1,5 +1,5 @@
 
-public class HardLevelFactory implements GameFactory{
+public class HardLevelFactory implements GameDetailFactory{
 	
 	@Override
 	public Size createSize() {
