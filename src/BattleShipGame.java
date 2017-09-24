@@ -3,7 +3,7 @@ public abstract class BattleShipGame {
 	String level;
 	 
 	Size size;
-	Ship ship;
+	Ships ship;
 	Equipment equipment;
 	
 	abstract void prepareGame();

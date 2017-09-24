@@ -3,13 +3,14 @@ package EquipmentBuilder;
 public class EquipmentDemo {
 
 	public static void main(String[] args) {
-		PreparationDirector pb= new PreparationDirector();
-		WeaponBuilder wd= new GunShotBuilder();
+		PreparationDirector pd= new PreparationDirector();
+		WeaponBuilder gunshot= new GunShotBuilder();
 		WeaponBuilder ww= new HandBombBuilder();
-		pb.setWeaponBuilder(wd);
-		pb.constructWeapon();
-		Weapon wea=pb.getWeapon();
-		System.out.println(wea.getName()+" "+wea.getShotsZone());
+		pd.setWeaponBuilder(gunshot);
+		pd.constructWeapon();
+		Weapon wgunshot=pd.getWeapon();
+		
+		System.out.println(wgunshot.getName()+" "+wgunshot.getShotsZone());
 	}
 
 }
