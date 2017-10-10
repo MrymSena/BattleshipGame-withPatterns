@@ -6,11 +6,11 @@ public class NormalLevelFactory implements GameDetailFactory{
 		return new NormalLevelSize();
 	}
 	@Override
-	public Equipment createEquipmens() {
-		return new NormalLevelEquipments();
+	public Equipment createEquipment() {
+		return (Equipment) new NormalLevelEquipments();
 	}
 	@Override
-	public Ship createShips() {
+	public Ships createShips() {
 		return new NormalLevelShips();
 	}
 }

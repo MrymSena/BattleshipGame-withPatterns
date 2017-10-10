@@ -6,11 +6,11 @@ public class HardLevelFactory implements GameDetailFactory{
 		return new HardLevelSize();
 	}
 	@Override
-	public Equipment createEquipmens() {
+	public Equipment createEquipment() {
 		return new HardLevelEquipments();
 	}
 	@Override
-	public Ship createShips() {
+	public Ships createShips() {
 		return new HardLevelShips();
 	}
 

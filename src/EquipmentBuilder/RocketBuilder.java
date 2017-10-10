@@ -1,7 +1,6 @@
 package EquipmentBuilder;
 
-public class RocketBuilder extends WeaponBuilder 
-{
+public class RocketBuilder extends WeaponBuilder {
 
 	@Override
 	public void buildName() {

@@ -1,6 +1,6 @@
 package EquipmentBuilder;
 
-public class Weapon {
+public class Weapon{
 	private String name="";
 	private int shotsZone=0;
 	
@@ -16,5 +16,6 @@ public class Weapon {
 	public int getShotsZone(){
 		return shotsZone;
 	}
+	
 
 }

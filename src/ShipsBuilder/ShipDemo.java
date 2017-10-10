@@ -4,12 +4,13 @@ public class ShipDemo {
 
     public static void main(String[] args) {
         ShipBuilder builder = new ShipBuilderImpl();
-        BattleshipBuilder carBuildDirector = new BattleshipBuilder(builder);
+        
+        BattleshipBuilder battleshipBuildDirector = new BattleshipBuilder(builder);
         
         //CarBuilder builder2 = new CarBuilderImpl();
-        BoatBuilder car=  new BoatBuilder(builder);
+        BoatBuilder boatBuilder=  new BoatBuilder(builder);
         
-        System.out.println(carBuildDirector.construct());
-        System.out.println(car.construct());
+        System.out.println(battleshipBuildDirector.construct());
+        System.out.println(boatBuilder.construct());
     }
 }

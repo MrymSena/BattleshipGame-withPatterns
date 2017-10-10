@@ -1,7 +1,8 @@
 package EquipmentBuilder;
 
-public abstract class WeaponBuilder {
-	protected Weapon weapon;
+
+public abstract class WeaponBuilder{
+	protected static Weapon weapon;
 	
 	public Weapon getWeapon(){
 		return weapon;
