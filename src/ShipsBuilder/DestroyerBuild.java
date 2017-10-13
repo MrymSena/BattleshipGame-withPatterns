@@ -1,10 +1,10 @@
 package ShipsBuilder;
 
-public class DestroyerBuilder {
+public class DestroyerBuild{
 
 	private ShipBuilder shipBuilder;
 	
-	public DestroyerBuilder(ShipBuilder shipBuilder){
+	public DestroyerBuild(ShipBuilder shipBuilder){
 		this.shipBuilder=shipBuilder;
 		
 	}
@@ -13,4 +13,5 @@ public class DestroyerBuilder {
 		shipBuilder.setSize(3);
 		return shipBuilder.getResult();
 	}
+
 }

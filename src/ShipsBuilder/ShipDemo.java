@@ -5,10 +5,10 @@ public class ShipDemo {
     public static void main(String[] args) {
         ShipBuilder builder = new ShipBuilderImpl();
         
-        BattleshipBuilder battleshipBuildDirector = new BattleshipBuilder(builder);
+        BattleshipBuild battleshipBuildDirector = new BattleshipBuild(builder);
         
         //CarBuilder builder2 = new CarBuilderImpl();
-        BoatBuilder boatBuilder=  new BoatBuilder(builder);
+        BoatBuild boatBuilder=  new BoatBuild(builder);
         
         System.out.println(battleshipBuildDirector.construct());
         System.out.println(boatBuilder.construct());

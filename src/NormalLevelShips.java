@@ -1,22 +1,34 @@
-import ShipsBuilder.BattleshipBuilder;
-import ShipsBuilder.BoatBuilder;
-import ShipsBuilder.DestroyerBuilder;
+import ShipsBuilder.BattleshipBuild;
+import ShipsBuilder.BoatBuild;
+import ShipsBuilder.DestroyerBuild;
 import ShipsBuilder.ShipBuilder;
 import ShipsBuilder.ShipBuilderImpl;
-import ShipsBuilder.SubmarineBuilder;
+import ShipsBuilder.SubmarineBuild;
 
 
 public class NormalLevelShips implements Ships {
 	
-	ShipBuilder builder = new ShipBuilderImpl();
-	BoatBuilder boatBuilder = new BoatBuilder(builder);
-	BoatBuilder boatBuilder2 = new BoatBuilder(builder);
-	SubmarineBuilder submarineBuilder = new SubmarineBuilder(builder);
-    DestroyerBuilder destroyerBuilder= new DestroyerBuilder(builder);
-    BattleshipBuilder battleshipBuilder= new BattleshipBuilder(builder);
+	ShipBuilder builder;
+	BoatBuild boatBuilder;
+	BoatBuild boatBuilder2;
+	SubmarineBuild submarineBuilder;
+    DestroyerBuild destroyerBuilder;
+    BattleshipBuild battleshipBuilder;
     
+	@Override
+	public void createShips() {
+		
+		ShipBuilder builder = new ShipBuilderImpl();
+		BoatBuild boatBuilder = new BoatBuild(builder);
+		BoatBuild boatBuilder2 = new BoatBuild(builder);
+		SubmarineBuild submarineBuilder = new SubmarineBuild(builder);
+	    DestroyerBuild destroyerBuilder= new DestroyerBuild(builder);
+	    BattleshipBuild battleshipBuilder= new BattleshipBuild(builder);
+	}
 	public String toString() {
 		return "Normal Level ships Boat1: "+ boatBuilder.construct()+"+Boat2: "+boatBuilder2.construct()+" Submarine: "+ submarineBuilder.construct()+ 
 				" Destroyer: "+destroyerBuilder.construct()+"Battleship: "+battleshipBuilder.construct();
 	}
+
+
 }

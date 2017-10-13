@@ -1,22 +1,33 @@
-import ShipsBuilder.BattleshipBuilder;
-import ShipsBuilder.BoatBuilder;
-import ShipsBuilder.DestroyerBuilder;
+import ShipsBuilder.BattleshipBuild;
+import ShipsBuilder.BoatBuild;
+import ShipsBuilder.DestroyerBuild;
 import ShipsBuilder.ShipBuilder;
 import ShipsBuilder.ShipBuilderImpl;
-import ShipsBuilder.SubmarineBuilder;
+import ShipsBuilder.SubmarineBuild;
 
 
 public class EasyLevelShips implements Ships {
 	
-	ShipBuilder builder = new ShipBuilderImpl();
-	
-	SubmarineBuilder submarineBuilder = new SubmarineBuilder(builder);
-    BoatBuilder boatBuilder=  new BoatBuilder(builder);
-    DestroyerBuilder destroyerBuilder= new DestroyerBuilder(builder);
+	ShipBuilder builder;
+	SubmarineBuild submarineBuilder;
+    BoatBuild boatBuilder;
+    DestroyerBuild destroyerBuilder;
    
- 
+ 	@Override
+	public void createShips() {
+		ShipBuilder builder = new ShipBuilderImpl();
+		
+		SubmarineBuild submarineBuilder = new SubmarineBuild(builder);
+	    BoatBuild boatBuilder=  new BoatBuild(builder);
+	    DestroyerBuild destroyerBuilder= new DestroyerBuild(builder);
+		
+	}
     
 	public String toString() {
 		return "Easy Level ships Submarine: "+ submarineBuilder.construct()+ " Boat: "+ boatBuilder.construct()+" Destroyer: "+destroyerBuilder.construct();
 	}
+
+
+
+
 }

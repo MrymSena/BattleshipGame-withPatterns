@@ -1,21 +1,17 @@
 package ShipsBuilder;
 
-
-public class BattleshipBuilder{
+public class SubmarineBuild {
 	private ShipBuilder shipBuilder;
 	
-	public BattleshipBuilder(ShipBuilder shipBuilder){
+	public SubmarineBuild(ShipBuilder shipBuilder){
 		this.shipBuilder=shipBuilder;
 		
 	}
+	
 	public Ship construct(){
-		shipBuilder.setName("Battleship");
-		shipBuilder.setSize(4);
+		shipBuilder.setName("Submarine");
+		shipBuilder.setSize(2);
 		return shipBuilder.getResult();
 	}
-	
-
-
 }
-
 
