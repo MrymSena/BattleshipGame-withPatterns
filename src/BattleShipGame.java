@@ -1,11 +1,16 @@
 
-public abstract class BattleShipGame {
+public class BattleShipGame {
 	String level;
 	 
 	Size size;
 	Ships ship;
 	Equipment equipment;
 	
-	abstract void prepareGame();
+	public void prepareGame(GameDetailFactory gameDetailFactory){
+		equipment=gameDetailFactory.createEquipment();
+		ship=gameDetailFactory.createShips();
+		size=gameDetailFactory.createSize();
+		
+	}
 
 }

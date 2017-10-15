@@ -3,6 +3,7 @@ import java.util.concurrent.ThreadLocalRandom;
                                              
 public class EasyLevelFactory implements GameDetailFactory{
 	
+	
 	@Override
 	public Size createSize() {
 		return new EasyLevelSize();

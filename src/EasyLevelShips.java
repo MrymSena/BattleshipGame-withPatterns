@@ -15,16 +15,16 @@ public class EasyLevelShips implements Ships {
    
  	@Override
 	public void createShips() {
-		ShipBuilder builder = new ShipBuilderImpl();
-		
-		SubmarineBuild submarineBuilder = new SubmarineBuild(builder);
-	    BoatBuild boatBuilder=  new BoatBuild(builder);
-	    DestroyerBuild destroyerBuilder= new DestroyerBuild(builder);
+ 		builder = new ShipBuilderImpl();
+ 		submarineBuilder = new SubmarineBuild(builder);
+	    boatBuilder=  new BoatBuild(builder);
+	    destroyerBuilder= new DestroyerBuild(builder);
 		
 	}
     
 	public String toString() {
-		return "Easy Level ships Submarine: "+ submarineBuilder.construct()+ " Boat: "+ boatBuilder.construct()+" Destroyer: "+destroyerBuilder.construct();
+		createShips();
+		return "Easy Level ships "+ submarineBuilder.construct()+ boatBuilder.construct()+destroyerBuilder.construct();
 	}
 
 

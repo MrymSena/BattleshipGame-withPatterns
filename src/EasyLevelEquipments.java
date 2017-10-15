@@ -80,7 +80,7 @@ public class EasyLevelEquipments implements Equipment {
 	}
 	
 	public String toString(){
-
+		 createEquipment();
 		return "Equpiments: "+ wrocket.getName()+whandbomb1.getName()+whandbomb2.getName()+wgunshot1.getName()+wgunshot2.getName()+wgunshot3.getName()
 				+wgunshot4.getName()+wgunshot5.getName()+wgunshot6.getName()+wgunshot7.getName();
 	
