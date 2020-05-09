@@ -10,7 +10,7 @@ public class EasyLevelFactory implements GameDetailFactory{
 	}
 	@Override
 	public Equipment createEquipment() {
-		return (Equipment) new EasyLevelEquipments();
+		return new EasyLevelEquipments();
 	}
 	@Override
 	public Ships createShips() {

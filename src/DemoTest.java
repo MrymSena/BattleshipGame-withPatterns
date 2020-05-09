@@ -33,4 +33,6 @@ public class DemoTest {
 	//deneme commit
 	
 	//calisma1 branch commit
+	//calisma1 commit2
+	//22
 }
