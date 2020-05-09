@@ -30,9 +30,4 @@ public class DemoTest {
 			System.out.println("numbers of Rockets: "+RocketCounter.getRockets());
 			*/	
 	}
-	//deneme commit
-	
-	//calisma1 branch commit
-	//calisma1 commit2
-	//22
 }
